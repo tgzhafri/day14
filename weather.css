@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body {
+    background-color: #081B25;
+    width: 100%;
+    height: 100%;
+}
+#container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 0 10px;
+    font-weight: bolder;
+}
+#current-holder {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#current-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    color: white;
+    padding-left: 10px;
+    /* background-color: #152C39; */
+    border-radius: 10px;
+}
+#current-card h2 {
+    font-size: 50px;
+}
+#current-card #location {
+    font-size: 30px;
+}
+#icon {
+    width: 100px;
+}
+#weather-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+#card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.weather-card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    position: relative;
+    gap: 0.5rem;
+    color: white;
+    background-color: #152C39;
+    border-radius: 10px;
+}
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-location {
+    width: 80px;
+    gap: 0.5rem;
+}
+.icon {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+#temp::after {
+    content: "\00B0";
+}
+#city-holder {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding:20px;
+}
+.fa {
+    margin-right: 10px;
+}
