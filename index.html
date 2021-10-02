@@ -22,11 +22,9 @@
     <div id="container">
       <h1>My Weather App</h1>
 
-      <div id="city-holder">
-        <button onclick="currentApi('Selangor')">Selangor</button>
-        <button onclick="currentApi('New York')">New York</button>
-        <button onclick="currentApi('London')">London</button>
-        <button onclick="currentApi('Australia')">Australia</button>
+      <div id="input-holder">
+        <input id='input' type="text" placeholder="insert city name">
+        <button id="btn" onclick="searchCity()">Search</button>
       </div>
 
       <div id="current-holder">
@@ -38,17 +36,14 @@
               <h4 id="humidity"></h4>
               <h4 id="wind"></h4>
             </div>
+            <h3 id="current-day"></h3>
             <h3 id="currentDt"></h3>
 
         </div>
       </div>
       
       <div id="weather-holder"></div>
-
-
-
-
-
+      </div>
     </div>
 
     <script
